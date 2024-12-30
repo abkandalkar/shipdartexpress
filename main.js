@@ -20,38 +20,6 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-// ScrollReveal().reveal(".header__image img, .container img ", {
-//   ...scrollRevealOption,
-//   origin: "right",
-// });
-
-// ScrollReveal().reveal(".header__content h1,.container", {
-//   ...scrollRevealOption,
-//   delay: 500,
-// });
-
-// ScrollReveal().reveal(".header__content pr", {
-//   ...scrollRevealOption,
-//   delay: 1000,
-// });
-
-// ScrollReveal().reveal(".header__content form", {
-//   ...scrollRevealOption,
-//   delay: 1500,
-// });
-
-// ScrollReveal().reveal(".header__content .bar", {
-//   ...scrollRevealOption,
-//   delay: 2000,
-// });
-
-// ScrollReveal().reveal(".header__image__card", {
-//   duration: 1000,
-//   interval: 500,
-//   delay: 2500,
-// });
-
-
 // FAQ
 
 const questions = document.querySelectorAll('.faq-question');
