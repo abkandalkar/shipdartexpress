@@ -407,6 +407,8 @@ h3 {
   color: #fff;
   padding: 40px 20px;
   /* border-radius: 25px; */
+  border-top-left-radius: 25px; /* Rounds one corner */
+    border-top-right-radius: 25px;
 }
 
 .footer-container {
