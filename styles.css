@@ -19,7 +19,7 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
-.container1,.partners,.hero,.features{
+.hero,.features{
   align-items: center;
   margin: auto;
   padding-block: 8rem 20rem;
@@ -35,11 +35,29 @@ a {
   padding-inline: 1rem;
   display: grid;
 }
+.partners{
+  align-items: center;
+
+  border-radius: 10px;
+
+  margin: auto;
+  padding-block: 8rem 2rem;
+  padding-inline: 1rem;
+  display: grid;
+}
+
 nav {
   position: fixed;
   isolation: isolate;
   width: 100%;
   z-index: 9;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.sticky {
+  background-color: transparent; /* Change background color when sticky */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
 }
 
 .nav__header {
@@ -136,7 +154,25 @@ div.hero{
   font-size: 2.5em;
   color: #315ec9;
   margin-bottom: 10px;
+  
 }
+
+.animated-text {
+  font-size: 0;
+  color: #315ec9;
+  text-align: start;
+  animation: growText 1s ease-in-out forwards;
+}
+
+@keyframes growText {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 2.5rem; /* Adjust to your desired final size */
+  }
+}
+
 
 .hero p {
   font-size: 1.2em;
@@ -171,6 +207,10 @@ div.hero{
   text-align: center;
   padding: 20px;
   background-color:transparent;
+}
+.feature:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .features .feature {
@@ -366,6 +406,7 @@ h3 {
   background-color: #315ec9;
   color: #fff;
   padding: 40px 20px;
+  /* border-radius: 25px; */
 }
 
 .footer-container {
@@ -476,6 +517,11 @@ h3 {
   justify-content: center;
   gap: 15px;
   margin: 20px 0;
+}
+
+.offering:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .offering {
@@ -608,7 +654,7 @@ h3 {
 
 @media (width > 768px) {
   nav {
-    position: static;
+    position:static;
     padding-block: 2rem 0;
     padding-inline: 1rem;
     max-width: var(--max-width);
@@ -618,6 +664,11 @@ h3 {
     justify-content: space-between;
     gap: 2rem;
   }  
+
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.9); /* Change background color when sticky */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
 
   .nav__header {
     /* logo */

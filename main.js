@@ -2,6 +2,12 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  header.classList.toggle('scrolled', window.scrollY > 100); 
+});
+
+
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
