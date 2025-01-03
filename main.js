@@ -1,31 +1,3 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
-
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  header.classList.toggle('scrolled', window.scrollY > 100); 
-});
-
-
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-});
-
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
-});
-
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
-};
-
 // FAQ
 
 const questions = document.querySelectorAll('.faq-question');
@@ -44,7 +16,8 @@ questions.forEach(question => {
 });
 
 
-//review 
+//Tab section
+
 
 
 
