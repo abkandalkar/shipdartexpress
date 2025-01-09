@@ -3,126 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <script type="main" src="main.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Shipdartexpress</title>
   </head>
 
+  
   <body>
-    <nav >
-        <div class="nav__header">
-          <div class="logo">
-            <img src="/assets/logo.png" alt="Logo">
-        </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <span><i class="ri-menu-line"></i></span>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="trackorder.html">Track Order</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="nav__btns">
-          <button class="btn sign__up">Sign Up</button>
-          <button class="btn sign__in">Sign In</button>
-        </div>
+
+    
+    <header>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="logo">
+          <img src="/assets/logo.png" alt="Logo">
+          <h1>SHIPDARTEXPRESS</h1>
+      </div>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="feature.html">Feature</a>
+          <a href="partners.html">Partners</a>
+          <a href="trackorder.html">Track Order</a>
+          <a href="contact.html">Contact</a>
       </nav>
-    <section class="hero">
-        <h1>About Shipclues</h1>
-        <p>At Shipclues, we simplify shipping for businesses across India. As a trusted courier aggregator, we empower businesses like yours to deliver products seamlessly and efficiently. Whether you're a small business owner or an established brand, our solutions are designed to make shipping hassle-free and cost-effective.</p>
-    </section>
+      <div class="mobile-nav" id="mobileNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="feature.html">Feature</a>
+          <a href="partners.html">Partners</a>
+          <a href="trackorder.html">Track Order</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="buttons">
+          <a href="#" class="btn btn-primary">Register</a>
+          <a href="#" class="btn btn-secondary">Sign In</a>
+      </div>
+  </header>
 
-    <section class="stats">
-        <div class="stat">
-            <h3>29,000+</h3>
-            <p>Indian Pincodes</p>
-        </div>
-        <div class="stat">
-            <h3>125,000 sq. ft.</h3>
-            <p>Warehousing Inventory</p>
-        </div>
-        <div class="stat">
-            <h3>20+</h3>
-            <p>Carrier Partners</p>
-        </div>
-        <div class="stat">
-            <h3>190+</h3>
-            <p>Countries</p>
-        </div>
-        <div class="stat">
-            <h3>12+</h3>
-            <p>Channel Partners</p>
-        </div>
-    </section>
+  <div class="About-Us">
+    <h1>About Us</h1>
+    <div class="container">
+    <h2>Welcome to Shipdartexpress</h2>
+    <p>
+    <strong>Shipdartexpress (product of Swift Dispatch Pro pvt ltd)</strong> was founded in 2024 with a clear vision: to transform the way businesses approach logistics. As a technology-driven logistics aggregator, known for our commitment to innovation, efficiency, and outstanding customer service. Our goal is simple yet powerful: to revolutionize the e-commerce shipping experience and make logistics seamless, reliable, and accessible to all.
+    </p>
+    <p>Since our inception, we’ve empowered <strong>sellers</strong> and entrepreneurs across India, helping them reach customers in over <strong>29,000+ pin codes</strong> nationwide. We believe that great shipping should be easy, affordable, and scalable, no matter the size of the business.</p>
 
-    <section class="hero1">
-        <h2>Why Choose Shipclues?</h2>
-        <p><b><br>Flexibility:</b> Ship without any commitments—no monthly plans or lock-ins.<br>
-            <b>Lightning-Fast COD Remittance:</b> Receive cash-on-delivery payments within just 1 day.<br>
-            <b>Extensive Reach:</b>Access over 29,000+ pin codes across India with leading courier partners.<br>
-            <b>Effortless Integrations:</b>Connect your online store with platforms like WooCommerce, Shopify, and Amazon.<br>
-            <strong> Centralized Management: </strong>Streamline your logistics with our user-friendly “Control Tower Dashboard.<br>
-            <b>Enhanced Customer Experience:</b>Provide a branded tracking page to keep your customers informed and engaged.</p>
-    </section>
+    <h2>Our Vision</h2>
+    <p>
+    At <strong>Shipdartexpress</strong>, our mission is to connect merchants and consumers through smart, technology-driven logistics solutions. We understand the complexities and challenges that small and medium-sized enterprises (SMEs) face in today’s fast-paced e-commerce landscape. That's why we've designed a platform that is intuitive, scalable, and cost-efficient, making it easy for businesses of all sizes to manage their shipping operations with confidence and ease.
+    </p>
 
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-section">
-            <a>ShipClues, help all E-commerce sellers to their 1st mile pickup and last mile delivery services and make their deliveries hassle free. Our first & foremost goal is to bring ease in seller’s life of doing business.</a>
-          </div>
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Track Order</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Courier Partner</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Product</h3>
-            <ul>
-              <li><a href="#">Shipclues Cargo</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cancellation & Refund Policy</a></li>
-              <li><a href="#">Disclaimer</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contact Info</h3>
-            <p>Email: <a href="mailto:info@shipclues.com">info@shipclues.com</a></p>
-            <p>Address: Shipclues Technologies Pvt Ltd. Corporate & Sales Office: BH-826 8th Floor, 81 Business Hub, 81 High Street, Sector 81, Faridabad-121001</p>
-            <!-- <div class="social-icons">
-              <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-              <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-              <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-              <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-            </div> -->
-          </div>
-          <div class="footer-section">
-            <h3>Subscribe to get offers</h3>
-            <div class="subscribe">
-              <input type="email" placeholder="Email Address">
-              <button>Go</button>
-            </div>
-            <!-- <div class="app-links">
-              <a href="#"><img src="google-play.png" alt="Google Play"></a>
-              <a href="#"><img src="app-store.png" alt="App Store"></a>
-            </div> -->
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>Terms & Conditions | Privacy Policy | Refund Cancellation | ONDC Disclosure</p>
-          <p>© 2024 Shipclues. All Rights Reserved.</p>
-        </div>
-      </footer>
+    <h2>Innovative Solutions for Modern Businesses</h2>
+    <p>
+    Our platform is built to empower businesses by offering <strong>innovative features</strong> that optimize shipping operations and reduce costs. From <strong>automated label generation</strong> to <strong>real-time tracking</strong> and <strong>AI-based carrier recommendation</strong>, our tools help businesses streamline their logistics and make data-driven decisions. By integrating with leading courier partners, we ensure that your products are delivered safely and on time, every time.
+    </p>
+    <h2>Commitment to Customer Success</h2>
+    <p>We don’t just provide logistics services; we’re dedicated to the success of our customers. Our team goes above and beyond to offer <strong>personalized support</strong> and valuable insights, helping you scale your business efficiently. We believe that our growth is directly tied to the success of our merchants, and we are proud to support <strong>sellers</strong> who trust <strong>Shipdartexpress</strong> to handle their shipping needs.</p>
+    </div>
+  <h2 style="font-size: 1.5rem; color: #003f7f;" class="section-title">Our Offering</h2>
+  <p>We work with India's most reputable carriers</p>
 
+  <div class="offerings">
+      <div class="offering">Deliver within <br> hours</div>
+      <div class="offering">27000+ serviceable pin codes</div>
+      <div class="offering">Reduce Shipping Cost</div>
+      <div class="offering">Timely COD Reconciliation</div>
+      <div class="offering">24x7 Customer Support</div>
+      <div class="offering">Fastest COD Remittance</div>
+      <div class="offering">Simplified Operations</div>
+      <div class="offering">Enhanced Tracking System</div>
+      <div class="offering">Seamless Integrations</div>
+  </div>
+  <div class="container">
+    <h2>Join Us on Our Journey</h2>
+    <p>
+    At <strong>Shipdartexpress</strong>, we are constantly innovating and expanding our services to meet the growing demands of modern businesses. We invite you to be a part of this exciting journey. With Shipdartexpress, shipping becomes not just a task, but a strategic advantage that propels your business forward. Let’s shape the future of logistics together—delivering success to your doorstep, one shipment at a time.
+    </p>
+    <h2>Contact Us</h2>
+    <p>
+    For inquiries or assistance, please don't hesitate to contact us at <a href="mailto:info@shipdartexpress.com">info@shipdartexpress.com</a>. We look forward to serving you.
+    </p>
+    <h2>Careers at Shipdartexpress</h2>
+    <p>
+    Interested in joining our team? Explore career opportunities with us and become a part of a dynamic company that’s transforming logistics. You can send your resume at <a href="mailto:careers@shipdartexpress.com">careers@shipdartexpress.com</a>
+    </p>
+    
+  </div>
+
+  </div>
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- <div class="footer-section">
+        <a>Address: <br> Shipdartexpress
+          SWIFT DISPATCH PRO PRIVATE LIMITED
+          PL NO. 10, H No. 753, KHARBI CHOWK, Mhalginagar,
+          Nagpur, Nagpur- 440034, Maharashtra</a>
+      </div> -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Courier Partner</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#">Shipclues Cargo</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cancellation & Refund Policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Address</h3>
+        <a>Shipdartexpress <br>
+          SWIFT DISPATCH PRO PRIVATE LIMITED <br>
+          PL NO. 10, H No. 753, KHARBI CHOWK, Mhalginagar, <br>
+          Nagpur, Nagpur- 440034, Maharashtra</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: <a href="mailto:info@Shipdartexpress.com">info@Shipdartexpress.com</a></p>
+        <p>Phone: +917588099633 <br>
+          Whatsapp: +917588099633</a></p>
+        <!-- <p>Shipdartexpress
+          SWIFT DISPATCH PRO PRIVATE LIMITED
+          PL NO. 10, H No. 753, KHARBI CHOWK, Mhalginagar,
+          Nagpur, Nagpur- 440034, Maharashtra</p> -->
+        <!-- <div class="social-icons">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div> -->
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to get offers</h3>
+        <div class="subscribe">
+          <input type="email" placeholder="Email Address">
+          <button>Go</button>
+        </div>
+        <!-- <div class="app-links">
+          <a href="#"><img src="google-play.png" alt="Google Play"></a>
+          <a href="#"><img src="app-store.png" alt="App Store"></a>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Terms & Conditions | Privacy Policy | Refund Cancellation | ONDC Disclosure</p>
+      <p>© Copyright Shipdartexpress. All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+// mobile nav
+
+function toggleMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  mobileNav.classList.toggle('active');
+}
+
 // FAQ
 
 const questions = document.querySelectorAll('.faq-question');
@@ -18,15 +25,39 @@ questions.forEach(question => {
 
 //Tab section
 
+function openPage(evt, pageName) {
+  var i, tabcontent, tablinks;
+  
+  // Hide all tab contents
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
 
+  // Remove "active" class from all buttons
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  // Show the clicked page content and add "active" class to the clicked button
+  document.getElementById(pageName).style.display = "flex";
+  evt.currentTarget.classList.add("active");
+}
+
+// Show the first page by default
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".tablinks").click();
+});
+  
 
 
 // track order
-function trackOrder() {
-  const trackingNumber = document.getElementById('trackingNumber').value;
+document.querySelector('.track-btn').addEventListener('click', () => {
+  const trackingNumber = document.getElementById('tracking-number').value;
   if (trackingNumber) {
-      alert(`Tracking Order: ${trackingNumber}`);
+    alert(`Tracking number ${trackingNumber} submitted.`);
   } else {
-      alert('Please enter a valid tracking number.');
+    alert('Please enter a tracking number.');
   }
-};
+});

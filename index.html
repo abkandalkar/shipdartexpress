@@ -13,20 +13,31 @@
   <body>
 
     
-    <header class="header">
+    <header>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
       <div class="logo">
-          <img src="/assets/logo.png" alt="Shipdart Express Logo">
-          <span>SHIPDARTEXPRESS</span>
+          <img src="/assets/logo.png" alt="Logo">
+          <h1>SHIPDARTEXPRESS</h1>
       </div>
-      <nav class="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#track-order">Track Order</a>
-          <a href="#contact">Contact</a>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="feature.html">Feature</a>
+          <a href="partners.html">Partners</a>
+          <a href="trackorder.html">Track Order</a>
+          <a href="contact.html">Contact</a>
       </nav>
-      <div class="auth-buttons">
-          <button class="try-free">Try For Free</button>
-          <button class="sign-in">Sign In</button>
+      <div class="mobile-nav" id="mobileNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="feature.html">Feature</a>
+          <a href="partners.html">Partners</a>
+          <a href="trackorder.html">Track Order</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="buttons">
+          <a href="#" class="btn btn-primary">Register</a>
+          <a href="#" class="btn btn-secondary">Sign In</a>
       </div>
   </header>
 
@@ -74,21 +85,31 @@
         <h2 class="section-title">Our Happy Customers</h2>
         <div class="marq">
           <div class="partner-logos">
-            <img src="/assets/abhinav.png" alt="Delhivery">
-            <img src="/assets/amaansa.png" alt="Blue Dart">
-            <img src="/assets/pvc_car.png" alt="eKart">
-            <img src="/assets/samarth.png" alt="XpressBees">
-            <img src="/assets/ujwala.png" alt="Ecom Express">
-            <img src="/assets/abhinav.png" alt="Delhivery">
-            <img src="/assets/amaansa.png" alt="Blue Dart">
-            <img src="/assets/pvc_car.png" alt="eKart">
-            <img src="/assets/samarth.png" alt="XpressBees">
-            <img src="/assets/ujwala.png" alt="Ecom Express">
-            <img src="/assets/abhinav.png" alt="Delhivery">
-            <img src="/assets/amaansa.png" alt="Blue Dart">
-            <img src="/assets/pvc_car.png" alt="eKart">
-            <img src="/assets/samarth.png" alt="XpressBees">
-            <img src="/assets/ujwala.png" alt="Ecom Express">
+            <img src="/assets/abhinav.png" alt="Abhinav">
+            <img src="/assets/amaansa.png" alt="Amaana">
+            <img src="/assets/pvc_car.png" alt="pvc_car">
+            <img src="/assets/samarth.png" alt="Samarth">
+            <img src="/assets/ujwala.png" alt="ujwala">
+            <img src="/assets/abhinav.png" alt="Abhinav">
+            <img src="/assets/amaansa.png" alt="Amaana">
+            <img src="/assets/pvc_car.png" alt="pvc_car">
+            <img src="/assets/samarth.png" alt="Samarth">
+            <img src="/assets/ujwala.png" alt="ujwala">
+            <img src="/assets/abhinav.png" alt="Abhinav">
+            <img src="/assets/amaansa.png" alt="Amaana">
+            <img src="/assets/pvc_car.png" alt="pvc_car">
+            <img src="/assets/samarth.png" alt="Samarth">
+            <img src="/assets/ujwala.png" alt="ujwala">
+            <img src="/assets/abhinav.png" alt="Abhinav">
+            <img src="/assets/amaansa.png" alt="Amaana">
+            <img src="/assets/pvc_car.png" alt="pvc_car">
+            <img src="/assets/samarth.png" alt="Samarth">
+            <img src="/assets/ujwala.png" alt="ujwala">
+            <img src="/assets/abhinav.png" alt="Abhinav">
+            <img src="/assets/amaansa.png" alt="Amaana">
+            <img src="/assets/pvc_car.png" alt="pvc_car">
+            <img src="/assets/samarth.png" alt="Samarth">
+            <img src="/assets/ujwala.png" alt="ujwala">
           </div>
         </div>
     </div>
@@ -114,20 +135,153 @@
             <div class="partner-logos">
               <img src="/assets/delhivery.png" alt="Delhivery">
               <img src="/assets/BlueCart_Logo.jpg" alt="Blue Dart">
-              <img src="/assets/ekart.jpg" alt="eKart">
+              <img src="/assets/ekart.jpg" alt="E-Kart">
               <img src="/assets/Xpressbees.png" alt="XpressBees">
               <img src="/assets/ecom-express.jpg" alt="Ecom Express">
               <img src="/assets/dtdc.jpeg" alt="DTDC">
               <img src="/assets/delhivery.png" alt="Delhivery">
               <img src="/assets/BlueCart_Logo.jpg" alt="Blue Dart">
-              <img src="/assets/ekart.jpg" alt="eKart">
+              <img src="/assets/ekart.jpg" alt="E-Kart">
+              <img src="/assets/Xpressbees.png" alt="XpressBees">
+              <img src="/assets/ecom-express.jpg" alt="Ecom Express">
+              <img src="/assets/dtdc.jpeg" alt="DTDC">
+              <img src="/assets/delhivery.png" alt="Delhivery">
+              <img src="/assets/BlueCart_Logo.jpg" alt="Blue Dart">
+              <img src="/assets/ekart.jpg" alt="E-Kart">
               <img src="/assets/Xpressbees.png" alt="XpressBees">
               <img src="/assets/ecom-express.jpg" alt="Ecom Express">
               <img src="/assets/dtdc.jpeg" alt="DTDC">
             </div>
           </div>
       </div>
+
+
+</div>
+
+
+<!-- Tab section -->
+<div class="tab1">
+  <div class="tab">
+    <button class="tablinks" onclick="openPage(event, 'Page1')">The Control Tower Dashboard</button>
+    <button class="tablinks" onclick="openPage(event, 'Page2')">T+1 COD Remittance</button>
+    <button class="tablinks" onclick="openPage(event, 'Page3')">Free"After Ship Tracking Page"</button>
+    <button class="tablinks" onclick="openPage(event, 'Page4')">Amazon Self-Ship</button>
   </div>
+
+  <!-- Tab Contents -->
+  <div id="Page1" class="tabcontent">
+    <div class="content-left">
+      <h3>The Control Tower Dashboard: Your 360-Degree view</h3>
+      <p>
+          Gain complete visibility and control over your shipments and orders with our Control Tower Dashboard. It provides a comprehensive, single-view platform to monitor key metrics and track shipments in real time.<br>
+          <b>High-Level Overview:</b> Get a snapshot of total shipments, orders, NDR (Non-Delivery Reports), RTO (Return to Origin), and COD (Cash on Delivery) status at a glance.<br>
+          <b>Detailed Tracking:</b> Access real-time updates on the status of your shipments, including when they are in transit or out for delivery.<br>
+          <b>Full Control:</b> Stay on top of your logistics operations and ensure smooth delivery by making informed decisions with data at your fingertips.<br>
+          With the Control Tower Dashboard, we ensure you are always in control of your shipments, enhancing your operational efficiency and customer satisfaction.
+      </p>
+    </div>
+    <div class="content-right">
+      <img src="/assets/tabs-1.jpg" alt="Image 1">
+    </div>
+  </div>
+
+  <!-- Page 2 Content -->
+  <div id="Page2" class="tabcontent">
+    <div class="content-left">
+      <h3>T+1 COD Remittance: Fastest Cash Access in the Industry</h3>
+      <p>
+          We understand the challenges of running a business, which is why we offer the fastest COD remittance in the industry—T+1 COD Remittance.<br>
+          <b>Fast and Reliable:</b> With T+1, you get your COD payments within just 1 business day—quicker than anyone else in the industry.<br>
+          <b>No Interruptions:</b> Say goodbye to long waiting periods and disruptions in your business operations. Your cash is available to you faster, allowing you to keep your business running smoothly.<br>
+          <b>Quick Access to Funds:</b>  We ensure you have fast access to your cash, so you can reinvest, pay suppliers, and grow your business without delay.<br>
+          Choose us for T+1 COD Remittance and experience the fastest, most efficient cash flow solution in the market.
+      </p>
+    </div>
+    <div class="content-right">
+      <img src="/assets/tabs-2.jpg" alt="Image 2">
+    </div>
+  </div>
+
+  <!-- Page 3 Content -->
+  <div id="Page3" class="tabcontent">
+    <div class="content-left">
+      <h3>Free "After Ship Tracking Page": Enhance Customer Experience</h3>
+      <p>We offer a free After Ship Tracking Page to help you provide seamless tracking updates directly on your website.<br>
+          <b>Reduce WISMO (Where Is My Order) Queries by 70%:</b> With real-time tracking visibility, your customers can easily check the status of their orders, cutting down on frequent inquiries.<br>
+        <b>Improve Customer Experience by 50%:</b> Providing an easy-to-use tracking page improves transparency, helping to enhance overall customer satisfaction.<br>
+        <b>Increase Repeat Orders by 20%:</b> A smooth, hassle-free tracking experience fosters trust and encourages customers to return for future purchases.<br>
+        With our free After Ship Tracking Page, you can streamline your operations, reduce customer frustration, and boost your business growth.
+      </p>
+    </div>
+    <div class="content-right">
+      <img src="/assets/tabs-3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <!-- Page 4 Content -->
+  <div id="Page4" class="tabcontent">
+    <div class="content-left">
+      <h3>Amazon Self-Ship: Scale your Business</h3>
+      <p>Ship your Amazon self-ship orders at the most competitive rates with our network of trusted courier partners.<br>
+          <b>Lowest Rates:</b> Starting at just Rs. 18/500 grams, you get the best pricing for your shipments.<br>
+        <b>Wide Coverage:</b> We offer delivery to 29,000+ pincodes, ensuring your orders reach customers across India.<br>
+          <b>Top Courier Partners:</b> We work with the best in the industry, including Delhivery, DTDC, Blue Dart, XpressBees, and more, to ensure fast and reliable deliveries.<br>
+        With Amazon Self-Ship, enjoy affordable shipping without compromising on quality or coverage.
+      </p>
+    </div>
+    <div class="content-right">
+      <img src="assets/tabs-4.jpg" alt="Image 4">
+    </div>
+  </div>
+</div>
+
+<!-- why shipdart -->
+
+<section class="why-choose">
+  <h1>Why Choose ShipDartExpress?</h1>
+  <div class="features1">
+    <div class="feature-box">
+      <h2>Affordable Rates</h2>
+      <p>Prices start as low as ₹18 for 500 grams.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Fastest COD Remittance</h2>
+      <p>Enjoy guaranteed cash-on-delivery remittance within just 1 day.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Flexibility</h2>
+      <p>No monthly plans or lock-in periods—ship when you need, how you need.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Extensive Coverage</h2>
+      <p>Partnered with major carriers, servicing over 29,000+ pin codes across the country.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Easy Integrations</h2>
+      <p>Integrate seamlessly with popular e-commerce channels for a hassle-free experience.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Centralized Management</h2>
+      <p>Use our “Control Tower dashboard” to manage and track all your shipments in one convenient place.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Outstanding Performance</h2>
+      <p>Enjoy a 99% delivery success rate, with less than 1% weight discrepancies, RTO, and NDR issues.</p>
+    </div>
+    <div class="feature-box">
+      <h2>After Ship Tracking Page</h2>
+      <p>Free After Shipping tracking page to improve your customer experience.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Referral Rewards</h2>
+      <p>Earn a 10% referral bonus on the first recharge—share the benefits with others!</p>
+    </div>
+    <div class="feature-box">
+      <h2>Value-Driven</h2>
+      <p>We prioritize customer delight, providing “paisa vasool” shipping solutions.</p>
+    </div>
+  </div>
+</section>
 
 
 
@@ -191,18 +345,30 @@
   <h2 class="section-title">Easy multi-channel integration</h2>
   <div class="marq">
     <div class="partner-logos">
-      <img src="/assets/woo.png" alt="Delhivery">
-      <img src="/assets/flipkart.png" alt="Blue Dart">
-      <img src="/assets/amazon.png" alt="eKart">
-      <img src="/assets/shopify.png" alt="XpressBees">
-      <img src="/assets/woo.png" alt="Delhivery">
-      <img src="/assets/flipkart.png" alt="Blue Dart">
-      <img src="/assets/amazon.png" alt="eKart">
-      <img src="/assets/shopify.png" alt="XpressBees">
-      <img src="/assets/woo.png" alt="Delhivery">
-      <img src="/assets/flipkart.png" alt="Blue Dart">
-      <img src="/assets/amazon.png" alt="eKart">
-      <img src="/assets/shopify.png" alt="XpressBees">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
+      <img src="/assets/woo.png" alt="woo">
+      <img src="/assets/flipkart.png" alt="flipkart">
+      <img src="/assets/amazon.png" alt="amazon">
+      <img src="/assets/shopify.png" alt="shopify">
     </div>
   </div>
 </div>
